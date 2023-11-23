@@ -15,3 +15,74 @@ body{
     max-width: 1300px;
     margin: auto;
 }
+header{
+    color: var(--color-primary);
+    padding: 30px 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+#products > div {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+#products img{
+    width: 280px;
+    border-radius: 25px;
+}
+#product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    width: 100%;
+    border-radius: 25px;
+    height: 110px;
+    padding: 20px;
+    margin-top: 30px;
+}
+#product-info h3{
+    color: var(--color-primary);
+    font-size: 1.3rem;
+}
+#product-info div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#product-info span {
+    font-size: 1.1rem;
+    color: gray;
+}
+#product-info button {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2)
+    0px 10px 20px;
+    transition: all 0.2s ease-in;
+}
+#product-info button:hover{
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 40px;
+}
