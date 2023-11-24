@@ -31,7 +31,7 @@ class Products {
     <div id="product-info">
     <h3>${name}</h3>
     <div>
-    <span>${price}</span>
+    <span>$ ${price}</span>
     <button data-id=${id}>+</button>
     </div>
     </div>

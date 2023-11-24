@@ -86,3 +86,97 @@ main{
     color: #fff;
     border-radius: 40px;
 }
+#cart h3{
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+#cart-list{
+    width: 330px;
+}
+#cart-list h5{
+    color: var(--color-error);
+    border: 2px solid var(--color-error);
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+#cart-list > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--color-light);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+#cart-list img{
+    width: 60px;
+    border-radius: 50%;
+}
+#cart-list img:hover{
+    border: 1px solid var(--color-secondary);
+}
+#cart-info{
+    text-align: center;
+}
+#cart-info h4{
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+#cart-info p {
+    color: gray;
+}
+#cart-control div{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#cart-control div button{
+    background-color: var(--color-secondary);
+    border: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#cart-control div button:hover{
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 40%;
+}
+#cart-control > button{
+    background-color: #fff;
+    border: 1px solid var(--color-error);
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    color: var(--color-error);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#cart-control > button:hover{
+    background-color: var(--color-error);
+    color: #fff;
+}
+#total-price{
+    border: 2px solid var(--color-secondary);
+    padding: 20px;
+    border-radius: 20px;
+    color: gray;
+}
+#total-price span{
+    color: var(--color-primary);
+}
