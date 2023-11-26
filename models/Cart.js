@@ -13,6 +13,7 @@ class Cart {
       const qty = this.products.filter((p) => p.id === product.id).length;
       this.createCart(product, qty);
     });
+    this.calculateTotalPrice();
   }
   createCart(data, qty) {
     const cardEle = document.createElement("div");
@@ -84,6 +85,10 @@ class Cart {
     const newProducts = this.products.filter((p) => p.id !== +id);
     this.products = newProducts;
     this.showProducts();
+  }
+  calculateTotalPrice() {
+    const total = this.products.reduce((acc, cur) => (acc += cur.price), 0);
+    this.price.innerText = `$ ${total}`;
   }
 }
 
